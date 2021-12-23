@@ -2,23 +2,30 @@
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello World</title>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script>
-      $(document).ready(function() {
-          alert($("a").attr("title"));
-          alert($("#ilk").text());
-      });
-    </script>
+		$(document).ready(function () {  // sayfanın yüklemesi bittiği zaman aşağıdaki yöntemleri çağır
+		  alert($("a").attr("title") + "\n" + $("a").attr("href") + "\n" + $("#ilk").text());
+		});
+	  </script>
+	    <script>
+			$(document).ready(function () {  // sayfanın yüklemesi bittiği zaman aşağıdaki yöntemleri çağır
+			  jQuery("h1").html("Bambaşka bir başlık");
+			  $("a").attr("title", "Kıdemli Yazılımcı Programı");
+			  $("a").attr("href", "http://www.bilgeadamboost.com/boost-plus");
+			  $("a").html("Bşlgeadam Boost Plus Programı");
+			});
+		  </script>
   </head>
-
   <body>
-    <h1 id="ilk">MERHABA DÜNYA !</h1>
+    <h1 id="ilk">Merhaba Dünya!</h1>
     <a
-      href="http://bilgeadam.com"
+      href="http://bilgeadamboost.com"
+      title="Yıldız Yazılımcı Programı"
       target="_blank"
-      title="Yildiz yazilimci yetiştirme programi"
-      >Bilge Adam</a>
+    >
+      http://bilgeadamboost.com
+    </a>
   </body>
 </html>
