@@ -1,0 +1,9 @@
+p {
+  color: orange;
+  background-color: bisque;
+}
+
+.errorDescription{
+    color: red;
+    background-color: lightgray;
+}
